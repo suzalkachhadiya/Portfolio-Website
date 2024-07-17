@@ -1,13 +1,12 @@
 import streamlit as st
 import google.generativeai as genai
 
-from constants import API_KEY
 st.set_page_config(
     page_title="AI Bot", 
     page_icon="🤖",
     layout="wide"
 )
-api_key=st.secrets[API_KEY]
+api_key=st.secrets["API_KEY"]
 genai.configure(api_key=api_key)
 model=genai.GenerativeModel("gemini-1.5-flash")
 

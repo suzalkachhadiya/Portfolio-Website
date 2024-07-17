@@ -88,6 +88,7 @@ if machine_learning:
 
 if computer_vision:
     st.write("• :blue[Computer Vision] Prjects")
+    st.title("Quiz game using Computer Vision")
 if nlp:
     st.header("• :blue[Natural Language Processing] Projects",divider="rainbow")
     st.title("Next Word Predictor")
