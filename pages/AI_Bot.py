@@ -72,3 +72,13 @@ if prompt := st.chat_input("What would you like to know about myself?"):
     # Display last 
     with st.chat_message("assistant"):
         st.markdown(response.text)
+
+
+
+# import streamlit as st
+
+# try:
+#     api_key = st.secrets["API_KEY"]
+#     st.write(f"API Key: {api_key}")
+# except KeyError:
+#     st.error("API_KEY not found in secrets.")

@@ -87,9 +87,29 @@ if machine_learning:
 
 
 if computer_vision:
-    st.write("• :blue[Computer Vision] Prjects")
-    st.title("Quiz game using Computer Vision")
-    st.subheader("working on the project ")
+    st.header("• :blue[Computer Vision] Projects",divider="rainbow")
+    tab1, tab2 = st.tabs(["Pneumonia Detection", "Quiz game using Computer Vision"])
+    with tab1:
+        st.title("Pneumonia Detection")
+        st.markdown("""
+            <div style='display: flex; justify-content: left; align-items: center;'>
+                <a href="https://github.com/suzalkachhadiya/Pneumonia-Classifiaction" target="_blank" style="margin-right: 10px;">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
+                </a>
+
+            </div>
+            """, unsafe_allow_html=True)
+        st.write("""This tool utilizes a Convolutional Neural Network (CNN), a powerful type of AI model, to analyze chest X-ray images and identify patterns that may indicate pneumonia.
+                 Leveraging cutting-edge AI, this tool analyzes chest X-rays with high accuracy, assisting healthcare professionals in pneumonia detection. Upload your X-ray to get started. """)
+        col1, col2=st.columns(2)
+        with col1:
+            st.image("assets/Pnemonia/1.png")
+            st.image("assets/Pnemonia/2.png")
+        with col2:
+            st.image("assets/Pnemonia/3.png")
+    with tab2:
+        st.title("Quiz game using Computer Vision")
+        st.subheader("working on the project ")
 if nlp:
     st.header("• :blue[Natural Language Processing] Projects",divider="rainbow")
     st.title("Next Word Predictor")
