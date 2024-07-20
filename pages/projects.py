@@ -118,9 +118,11 @@ if computer_vision:
             </div>
             """, unsafe_allow_html=True)
         st.write("""a virtual calculator that you can use with just your hands! ✋️ No need for a physical calculator or even keyboard.""")
-        col1, col2, col3=st.columns([1,3,1])
+        col1, col2=st.columns(2)
+        with col1:
+            st.image("assets/Calculator/1.jpg")
         with col2:
-            st.video("assets\Calculator\Virtual_calc.mp4")
+            st.image("assets/Calculator/2.jpg")
     with tab3:
         st.title("Quiz game using Computer Vision")
         st.subheader("working on the project ")
