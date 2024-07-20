@@ -88,8 +88,8 @@ if machine_learning:
 
 if computer_vision:
     st.header("• :blue[Computer Vision] Projects",divider="rainbow")
-    tab1, tab2 = st.tabs(["Pneumonia Detection", "Quiz game using Computer Vision"])
-    with tab1:
+    tab1, tab2, tab3 = st.tabs(["Virtual Calculator","Pneumonia Detection","Quiz game using Computer Vision"])
+    with tab2:
         st.title("Pneumonia Detection")
         st.markdown("""
             <div style='display: flex; justify-content: left; align-items: center;'>
@@ -107,7 +107,21 @@ if computer_vision:
             st.image("assets/Pnemonia/2.png")
         with col2:
             st.image("assets/Pnemonia/3.png")
-    with tab2:
+    with tab1:
+        st.title("Virtual Calculator")
+        st.markdown("""
+            <div style='display: flex; justify-content: left; align-items: center;'>
+                <a href="https://github.com/suzalkachhadiya/Virtual-Calculator" target="_blank" style="margin-right: 10px;">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
+                </a>
+
+            </div>
+            """, unsafe_allow_html=True)
+        st.write("""a virtual calculator that you can use with just your hands! ✋️ No need for a physical calculator or even keyboard.""")
+        col1, col2, col3=st.columns([1,3,1])
+        with col2:
+            st.video("assets\Calculator\Virtual_calc.mp4")
+    with tab3:
         st.title("Quiz game using Computer Vision")
         st.subheader("working on the project ")
 if nlp:
