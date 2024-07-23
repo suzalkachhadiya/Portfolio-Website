@@ -125,7 +125,22 @@ if computer_vision:
             st.image("assets/Calculator/2.jpg")
     with tab3:
         st.title("Quiz game using Computer Vision")
-        st.subheader("working on the project ")
+        st.markdown("""
+            <div style='display: flex; justify-content: left; align-items: center;'>
+                <a href="https://github.com/suzalkachhadiya/Virtual-Quiz" target="_blank" style="margin-right: 10px;">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
+                </a>
+
+            </div>
+            """, unsafe_allow_html=True)
+        st.write("""a virtual quiz that you can give with just your hands! ✋️ No need for a physical divices.""")
+        col1, col2=st.columns(2)
+        with col1:
+            st.image("assets/Quiz/1.png")
+            st.image("assets/Quiz/2.png")
+        with col2:
+            st.image("assets/Quiz/3.png")
+            st.image("assets/Quiz/4.png")
 if nlp:
     st.header("• :blue[Natural Language Processing] Projects",divider="rainbow")
     st.title("Next Word Predictor")
