@@ -73,7 +73,32 @@ if prompt := st.chat_input("What would you like to know about myself?"):
     with st.chat_message("assistant"):
         st.markdown(response.text)
 
+with st.sidebar:
+        st.markdown("""
+        <div style="padding: 10px; border: 2px solid #ffffff; border-radius: 5px; background-color: #0E1117; color: #ffffff; width: fit-content;">
+        📞 +91 8488855887
+        </div>
+        """, unsafe_allow_html=True)
+        st.write("\n")
 
+        st.subheader("Connect with me")
+
+        st.markdown("""
+        <div style='display: flex; justify-content: left; align-items: center;'>
+            <a href="https://www.linkedin.com/in/suzal-kachhadiya-149498237/" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="LinkedIn" width="32" height="32" style="filter: invert(1)">
+            </a>
+            <a href="https://x.com/SuzalKachhadiya" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="Twitter" width="32" height="32" style="filter: invert(1)">
+            </a>
+            <a href="https://github.com/suzalkachhadiya" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
+            </a>
+            <a href="suzalkachhadiya111@gmail.com" target="_blank" style="margin-right: 10px;">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="Email" width="32" height="32" style="filter: invert(1)">
+            </a>
+        </div>
+        """, unsafe_allow_html=True)
 
 # import streamlit as st
 

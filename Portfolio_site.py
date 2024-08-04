@@ -86,8 +86,28 @@ st.write("• :blue[**Machine Learning Libraries**] :  Scikit-learn, CatBoost ")
 st.write("• :blue[**Deep Learning Frameworks**] :  PyTorch, TensorFlow") 
 st.write("• :blue[**Architectures**] :  ANN, CNN, RNN, LSTM ") 
 st.write("• :blue[**Computer Vision**] :  Image Processing, Object Detection, OpenCV ") 
-st.write("• :blue[**Database Management**] :  ANN, CNN, RNN, LSTM ") 
+st.write("• :blue[**Database Management**] :  MySQL, MongoDB ") 
 st.write("• :blue[**Other Tools**] :  Jupyter Notebook, Git, Kaggle") 
+
+st.write("\n")
+st.write("\n")
+st.header("What describes me",divider="rainbow")
+st.subheader("while :blue[True]:")
+subheader_style1 = """
+    <div style='font-size: 1.5em; font-weight: 600;'>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning_mode('<span style="color:green;">ON</span>')
+    </div>
+    """
+subheader_style2 = """
+    <div style='font-size: 1.5em; font-weight: 600;'>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning_mode('<span style="color:green;">ON</span>');
+    </div>
+    """
+st.markdown(subheader_style1, unsafe_allow_html=True)
+st.write("\n")
+st.subheader("while(:blue[true]){")
+st.markdown(subheader_style2, unsafe_allow_html=True)
+st.subheader("}")
 
 
 with st.sidebar:
@@ -111,6 +131,8 @@ with st.sidebar:
             <a href="https://github.com/suzalkachhadiya" target="_blank" style="margin-right: 10px;">
                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
             </a>
-
+            <a href="suzalkachhadiya111@gmail.com" target="_blank" style="margin-right: 10px;">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="Email" width="32" height="32" style="filter: invert(1)">
+            </a>
         </div>
         """, unsafe_allow_html=True)
