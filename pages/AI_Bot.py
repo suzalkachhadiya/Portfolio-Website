@@ -94,7 +94,7 @@ with st.sidebar:
             <a href="https://github.com/suzalkachhadiya" target="_blank" style="margin-right: 10px;">
                 <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
             </a>
-            <a href="suzalkachhadiya111@gmail.com" target="_blank" style="margin-right: 10px;">
+            <a href="mailto:suzalkachhadiya111@gmail.com" target="_blank" style="margin-right: 10px;">
             <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="Email" width="32" height="32" style="filter: invert(1)">
             </a>
         </div>
