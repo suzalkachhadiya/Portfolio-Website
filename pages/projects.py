@@ -7,35 +7,47 @@ st.set_page_config(
 )
 
 popover = st.popover("Filter Domains")
-powerbi = popover.checkbox("Show PowerBI Projects", True)
+genAI=popover.checkbox("Show Generative AI Projects", True)
 machine_learning = popover.checkbox("Show Machine Learning Projects", True)
 computer_vision = popover.checkbox("Show Computer Vision Projects", True)
 nlp = popover.checkbox("Show Natural Language Processing Projects", True)
+powerbi = popover.checkbox("Show PowerBI Projects", True)
 
-if powerbi:
-    st.header("• :blue[PowerBI] Projects",divider="rainbow")
-    tab1, tab2 = st.tabs(["Hardware Company Data", "US Stocks Data"])
+if genAI:
+    st.header("• :blue[Generative AI] Projects",divider="rainbow")
+    tab1, tab2 = st.tabs(["Chat With Search","AI Finance Adviser"])
+
     with tab1:
-        st.title("Hardware Company sales data - Dashboard")
-        st.write("""Dashborad of sales and stats of a hardware company. From which company can improve and build new stretegies to compete in high competitive market. """)
-        col1, col2=st.columns(2)
-        with col1:
-            st.image("assets/PowerBI/HomePage.png")
-            st.image("assets/PowerBI/FinanceView.png")
-            st.image("assets/PowerBI/SalesView.png")
-        with col2:
-            st.image("assets/PowerBI/MarketingView.png")
-            st.image("assets/PowerBI/SupplyChainView.png")
-            st.image("assets/PowerBI/ExecutiveView.png")
+        st.title("Chat With Search")
+        st.markdown("""
+        <div style='display: flex; justify-content: left; align-items: center;'>
+            <a href="https://github.com/suzalkachhadiya/Chat-With-Search" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
+            </a>
 
-    with tab2:
-        st.title("US Stocks Data - Dashboard")
+        </div>
+        """, unsafe_allow_html=True)
+        st.write("""This is a Streamlit-based conversational AI application that combines multiple LangChain agents and tools for enhanced information retrieval.
+            The app allows users to interact with different types of agents (Zero-Shot, Conversational, and Structured) while leveraging various search tools including PDF document search, 
+            Arxiv papers, Wikipedia, and DuckDuckGo.It features a customizable interface where users can select their preferred combination of tools and agent types, 
+            and uses the Groq API with the Llama3-8b model for processing queries. The system maintains conversation history and provides streaming responses with visual feedback through the Streamlit interface. """)    
+        
+        col1, col2, col3=st.columns([1,1.5,1])
+        with col2:
+            st.video("https://www.youtube.com/watch?v=K8re0A4HAcU")
+            
         col1, col2=st.columns(2)
         with col1:
-            st.image("assets/PowerBI/EmployeeView.png")
+            st.image("assets/Chat_With_Search/1.png")
+            st.image("assets/Chat_With_Search/2.png")
         with col2:
-            st.image("assets/PowerBI/FinancialMetricsView.png")
-        
+            st.image("assets/Chat_With_Search/3.png")
+            st.image("assets/Chat_With_Search/4.png")
+    
+    with tab2:
+        st.title("AI Finance Adviser")
+        st.subheader("working on it.")
+
 
 if machine_learning:
     st.header("• :blue[Machine Learning] Projects",divider="rainbow")
@@ -161,6 +173,30 @@ if nlp:
         st.image("assets/NWP/2.png")
     with col2:
         st.image("assets/NWP/3.png")
+
+if powerbi:
+    st.header("• :blue[PowerBI] Projects",divider="rainbow")
+    tab1, tab2 = st.tabs(["Hardware Company Data", "US Stocks Data"])
+    with tab1:
+        st.title("Hardware Company sales data - Dashboard")
+        st.write("""Dashborad of sales and stats of a hardware company. From which company can improve and build new stretegies to compete in high competitive market. """)
+        col1, col2=st.columns(2)
+        with col1:
+            st.image("assets/PowerBI/HomePage.png")
+            st.image("assets/PowerBI/FinanceView.png")
+            st.image("assets/PowerBI/SalesView.png")
+        with col2:
+            st.image("assets/PowerBI/MarketingView.png")
+            st.image("assets/PowerBI/SupplyChainView.png")
+            st.image("assets/PowerBI/ExecutiveView.png")
+
+    with tab2:
+        st.title("US Stocks Data - Dashboard")
+        col1, col2=st.columns(2)
+        with col1:
+            st.image("assets/PowerBI/EmployeeView.png")
+        with col2:
+            st.image("assets/PowerBI/FinancialMetricsView.png")
 
 with st.sidebar:
         st.markdown("""
