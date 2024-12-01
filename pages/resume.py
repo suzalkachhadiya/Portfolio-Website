@@ -1,5 +1,7 @@
 import streamlit as st
 import base64
+from pdf2image import convert_from_path
+
 
 st.set_page_config(
     page_title="Suzal Kachhadiya - resume", 
@@ -9,25 +11,43 @@ st.set_page_config(
 
 def show_resume_page():
     # Video Resume Section
-    st.header(":blue[Video] Resume",divider="rainbow")
 
-    col1, col2, col3=st.columns([1,2,1])
-    with col2:
+    col1, col2, col3=st.columns([3,1,1])
+    with col1:
+        st.header(":blue[Video] Resume",divider="rainbow")
         youtube_link = "https://youtu.be/srD87TODBSE?feature=shared"
         st.video(youtube_link)
 
     st.write("\n")
 
-    # PDF Resume Section
-    st.header(":blue[Doc] Resume",divider="rainbow")
-    col1, col2, col3=st.columns([1,7,1])
-    with col2:
-        with open("assets/resume/Resume_DS.pdf", "rb") as pdf_file:
-            base64_pdf = base64.b64encode(pdf_file.read()).decode('utf-8')
-        
-        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}"  width="1000" height="1000"type="application/pdf"></iframe>'
-        st.markdown(pdf_display, unsafe_allow_html=True)
 
+    with col2:
+    # PDF Resume Section
+            st.header(":blue[Doc] Resume",divider="rainbow")
+    # col1, col2, col3=st.columns([1,7,1])
+    # with col2:
+    #     with open("assets/resume/Resume_DS.pdf", "rb") as pdf_file:
+    #         base64_pdf = base64.b64encode(pdf_file.read()).decode('utf-8')
+        
+    #     pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}"  width="1000" height="1000"type="application/pdf"></iframe>'
+    #     st.markdown(pdf_display, unsafe_allow_html=True)
+
+    # col1, col2, col3 = st.columns([1,7,1])
+    # with col2:
+    #     images = convert_from_path("Resume_DS.pdf")
+    #     for image in images:
+    #         st.image(image)
+    
+        
+            with open("assets/resume/Suzal_Kachhadiya_1.pdf", "rb") as pdf_file:
+                    st.download_button(
+                        label="📄 Download Resume PDF",
+                        data=pdf_file,
+                        file_name="Suzal_Kachhadiya.pdf",
+                        mime="application/pdf",
+                        key="download-resume-pdf"
+                    )
+    
     with st.sidebar:
         st.markdown("""
         <div style="padding: 10px; border: 2px solid #ffffff; border-radius: 5px; background-color: #0E1117; color: #ffffff; width: fit-content;">

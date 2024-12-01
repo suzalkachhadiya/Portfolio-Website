@@ -70,7 +70,7 @@ if genAI:
             st.image("assets/Chat_With_Search/3.png")
             st.image("assets/Chat_With_Search/4.png")
     
-    with tab2:
+    with tab3:
         st.title("AI Finance Adviser")
         st.subheader("working on it.")
 
