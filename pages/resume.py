@@ -39,7 +39,7 @@ def show_resume_page():
     #         st.image(image)
     
         
-            with open("assets/resume/Suzal_Kachhadiya_1.pdf", "rb") as pdf_file:
+            with open("assets/resume/Suzal_Kachhadiya_4.pdf", "rb") as pdf_file:
                     st.download_button(
                         label="📄 Download Resume PDF",
                         data=pdf_file,
