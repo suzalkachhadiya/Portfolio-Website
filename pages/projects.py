@@ -15,9 +15,35 @@ powerbi = popover.checkbox("Show PowerBI Projects", True)
 
 if genAI:
     st.header("• :blue[Generative AI] Projects",divider="rainbow")
-    tab1, tab2 = st.tabs(["Chat With Search","AI Finance Adviser"])
+    tab1, tab2, tab3 = st.tabs(["CreationScope","Chat With Search","AI Finance Adviser"])
 
     with tab1:
+        st.title("CreationScope")
+        st.markdown("""
+        <div style='display: flex; justify-content: left; align-items: center;'>
+            <a href="https://github.com/suzalkachhadiya/CreationScope-streamlit" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
+            </a>
+
+        </div>
+        """, unsafe_allow_html=True)
+        st.write("""multi-agent AI system operates as your intelligent research assistant, 
+                powered by three specialized agents working in harmony. When you input a company name, 
+                the Research Agent first scours the internet to gather comprehensive information about 
+                the company's core business and strategic focus. This intelligence is then passed to 
+                our Use Case Generator Agent, which analyzes the data to identify promising opportunities
+                for implementing AI technologies like GenAI, LLMs, and ML solutions within the company's context. 
+                Finally, our Resource Collector Agent steps in to locate relevant datasets, models, 
+                and implementation resources from platforms like Kaggle, HuggingFace, and GitHub, 
+                ensuring that each proposed AI solution has practical resources to support its implementation. 
+                The entire process culminates in a detailed report that bridges the gap between 
+                possibility and practicality in AI adoption. """)    
+        
+        col1, col2, col3=st.columns([1,2,1])
+        with col2:
+            st.video("https://www.youtube.com/watch?v=PV8ZrtlRCVo")
+
+    with tab2:
         st.title("Chat With Search")
         st.markdown("""
         <div style='display: flex; justify-content: left; align-items: center;'>
@@ -32,7 +58,7 @@ if genAI:
             Arxiv papers, Wikipedia, and DuckDuckGo.It features a customizable interface where users can select their preferred combination of tools and agent types, 
             and uses the Groq API with the Llama3-8b model for processing queries. The system maintains conversation history and provides streaming responses with visual feedback through the Streamlit interface. """)    
         
-        col1, col2, col3=st.columns([1,1.5,1])
+        col1, col2, col3=st.columns([1,2,1])
         with col2:
             st.video("https://www.youtube.com/watch?v=K8re0A4HAcU")
             
