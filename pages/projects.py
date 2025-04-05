@@ -15,7 +15,7 @@ powerbi = popover.checkbox("Show PowerBI Projects", True)
 
 if genAI:
     st.header("• :blue[Generative AI] Projects",divider="rainbow")
-    tab1, tab2, tab3 = st.tabs(["CreationScope","Chat With Search","AI Finance Adviser"])
+    tab1, tab2, tab3 = st.tabs(["CreationScope","Chat With Search","NL2SQL"])
 
     with tab1:
         st.title("CreationScope")
@@ -71,8 +71,20 @@ if genAI:
             st.image("assets/Chat_With_Search/4.png")
     
     with tab3:
-        st.title("AI Finance Adviser")
-        st.subheader("working on it.")
+        st.title("NL2SQL")
+        st.markdown("""
+        <div style='display: flex; justify-content: left; align-items: center;'>
+            <a href="https://github.com/suzalkachhadiya/NL2SQL-langchain" target="_blank" style="margin-right: 10px;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="32" height="32" style="filter: invert(1)">
+            </a>
+
+        </div>
+        """, unsafe_allow_html=True)
+        st.write("""This is a Streamlit-based conversational AI application that translates natural language queries into SQL statements and retrieves relevant answers from a connected database.
+        The app utilizes LangChain agents along with SQLDatabaseChain to provide seamless interaction with databases using plain English. It features a customizable interface and streaming responses, making data querying more intuitive for non-technical users.""")
+        col1, col2, col3=st.columns([1,2,1])
+        with col2:
+            st.image("assets/NL2SQL/1.png")
 
 
 if machine_learning:

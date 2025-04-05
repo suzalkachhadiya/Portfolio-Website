@@ -88,6 +88,7 @@ st.write("• :blue[**Architectures**] :  ANN, CNN, RNN, LSTM, GRU, Encoder-Deco
 st.write("• :blue[**Generative AI**] :  Langchain, Llamaindex, RAG, Vector Databases") 
 st.write("• :blue[**Computer Vision**] :  Image Processing, Object Detection, OpenCV ") 
 st.write("• :blue[**Database Management**] :  MySQL, MongoDB") 
+st.write("• :blue[**API**] :  FastAPI, Flask")
 st.write("• :blue[**Other Tools**] :  Jupyter Notebook, Git, Kaggle") 
 
 st.write("\n")
@@ -99,16 +100,7 @@ subheader_style1 = """
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning_mode('<span style="color:green;">ON</span>')
     </div>
     """
-subheader_style2 = """
-    <div style='font-size: 1.5em; font-weight: 600;'>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;learning_mode('<span style="color:green;">ON</span>');
-    </div>
-    """
 st.markdown(subheader_style1, unsafe_allow_html=True)
-st.write("\n")
-st.subheader("while(:blue[true]){")
-st.markdown(subheader_style2, unsafe_allow_html=True)
-st.subheader("}")
 
 
 with st.sidebar:
