@@ -109,11 +109,9 @@ if machine_learning:
         with col1:
             st.image("assets/AIDRP/5 (2).png")
             st.image("assets/AIDRP/8 (1).png")
-            st.video("https://www.youtube.com/watch?v=apUY99YulMo")
         with col2:
             st.image("assets/AIDRP/6 (2).png")
             st.image("assets/AIDRP/9.png")
-            st.video("https://www.youtube.com/watch?v=3JcbM14BUAQ")
 
     with tab2:
         st.title("Phishing Classifier")
